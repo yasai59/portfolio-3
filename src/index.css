@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-weight: 400;
+    font-family: 'fira-mono';
+    src: url("/fonts/Fira_Mono/FiraMono-Regular.ttf");
+  }
+  @font-face {
+    font-weight: 700;
+    font-family: 'fira-mono';
+    src: url("/fonts/Fira_Mono/FiraMono-Bold.ttf");
+  }
+  
+  @font-face {
+    font-weight: 400;
+    font-family: 'fira-code';
+    src: url("/fonts/Fira_Code/FiraCode-VariableFont_wght.ttf");
+  }
+}
+
+@layer components {
+  .container {
+    margin: 0 auto;
+    
+    
+  }
+}
+
+/* cambiar los colores */
+body {
+  color: white;
+  background-color: black;
+}
