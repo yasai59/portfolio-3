@@ -15,9 +15,45 @@
   }
   
   @font-face {
-    font-weight: 400;
     font-family: 'fira-code';
     src: url("/fonts/Fira_Code/FiraCode-VariableFont_wght.ttf");
+  }
+
+  /* Japanese font */
+  @font-face {
+    font-weight: 100;
+    font-family: 'm-plus-1p';
+    src: url("/fonts/M_PLUS_1P/MPLUS1p-thin.ttf");
+  }
+  @font-face {
+    font-weight: 300;
+    font-family: 'm-plus-1p';
+    src: url("/fonts/M_PLUS_1P/MPLUS1p-Light.ttf");
+  }
+  @font-face {
+    font-weight: 400;
+    font-family: 'm-plus-1p';
+    src: url("/fonts/M_PLUS_1P/MPLUS1p-Regular.ttf");
+  }
+  @font-face {
+    font-weight: 500;
+    font-family: 'm-plus-1p';
+    src: url("/fonts/M_PLUS_1P/MPLUS1p-Medium.ttf");
+  }
+  @font-face {
+    font-weight: 700;
+    font-family: 'm-plus-1p';
+    src: url("/fonts/M_PLUS_1P/MPLUS1p-Bold.ttf");
+  }
+  @font-face {
+    font-weight: 800;
+    font-family: 'm-plus-1p';
+    src: url("/fonts/M_PLUS_1P/MPLUS1p-ExtraBold.ttf");
+  }
+  @font-face {
+    font-weight: 900;
+    font-family: 'm-plus-1p';
+    src: url("/fonts/M_PLUS_1P/MPLUS1p-Black.ttf");
   }
 }
 
