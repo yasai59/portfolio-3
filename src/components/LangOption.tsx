@@ -8,7 +8,7 @@ type LangOptionProps = {
 
 export default function LangOption({callback, lang}: LangOptionProps) {
   return (
-    <div onMouseDown={() => callback(lang.code)} className="flex flex-col items-center p-2 hover:bg-[#5858585e] w-22 bg-black">
+    <div onMouseDown={() => callback(lang.code)} className="flex flex-col items-center p-2 hover:bg-mygray w-22 bg-black">
       <img src={`/images/flags/${lang.code}.svg`} className="w-10 rounded-md" draggable={false}/>
       {lang.name}
     </div>

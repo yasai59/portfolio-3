@@ -34,12 +34,13 @@ export const LanguageSelector = () => {
       <img src={`/images/flags/${language}.svg`} alt="current language flag" className="w-10" draggable={false} />
       <i className={`icon-[tabler--chevron-down] ml-2 transition-transform ${menuOpen ? "rotate-180" : "rotate-0"}`} />
     </div>
-    <div className={`grid grid-cols-2 absolute w-52 top-full right-0 border border-gray-500 bg-gray-500 gap-[1px] rounded-lg cursor-pointer overflow-hidden ${!menuOpen && "hidden"}`}>
+    <div className={`grid grid-cols-2 absolute w-52 top-full right-0 border border-mygray bg-mygray gap-[1px] rounded-lg cursor-pointer overflow-hidden ${!menuOpen && "hidden"}`}>
       <LangOption callback={handleChangeLanguage} lang={{code: "es", name: "Español"}}/>
       <LangOption callback={handleChangeLanguage} lang={{code: "en", name: "English"}}/>
       <LangOption callback={handleChangeLanguage} lang={{code: "jp", name: "日本語"}}/>
       <LangOption callback={handleChangeLanguage} lang={{code: "ca", name: "Català"}}/>
     </div>
+    <div className="background -z-10 w-96 h-96 border-2 border-mygray absolute rounded-xl -rotate-[35deg] bottom-2 -left-32"></div>
   </div>
   </>
 };

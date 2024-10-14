@@ -9,7 +9,6 @@ export const MiniBob = () => {
 
     const { left, top, right, bottom } = eyes.current?.getBoundingClientRect() as DOMRect;
 
-
     // get the coordinates of the middle of the eyes
     const middleX = left + (right - left) / 2;
     const middleY = top + (bottom - top) / 2;
@@ -31,13 +30,11 @@ export const MiniBob = () => {
       };
 
       // limit the movement of the eyes
-      if (move.x < -100) move.x = -100;
-      if (move.x > 100) move.x = 100;
+      if (move.x < -80) move.x = -80;
+      if (move.x > 80) move.x = 80;
       if (move.y > 20) move.y = 20;
 
       pupil.style.transform = `translate(${move.x}%, ${move.y}%)`;
-
-      // calculate the distance between the mouse and the middle of the eyes
     });
   };
 
@@ -53,12 +50,12 @@ export const MiniBob = () => {
   return (
     <div className="relative block h-24 w-24">
       <div className="h-20 w-20 border-4 border-white rounded-xl bg-black z-10 absolute">
-        <div className="eyes flex w-full justify-around mt-2 relative" ref={eyes}>
-          <div className="eye w-6 h-6 bg-white rounded-full">
-            <div className="pupil w-2 h-2 bg-black rounded-full absolute"></div>
+        <div className="eyes flex w-full justify-around mt-2" ref={eyes}>
+          <div className="eye w-6 h-6 bg-white rounded-full relative">
+            <div className="pupil top-1/2 left-1/2 w-3 h-3 bg-black rounded-full absolute"></div>
           </div>
-          <div className="eye w-6 h-6 bg-white rounded-full">
-            <div className="pupil w-2 h-2 bg-black rounded-full absolute"></div>
+          <div className="eye w-6 h-6 bg-white rounded-full relative">
+            <div className="pupil top-1/2 left-1/2 w-3 h-3 bg-black rounded-full absolute"></div>
           </div>
         </div>
       </div>
