@@ -19,6 +19,17 @@
     src: url("/fonts/Fira_Code/FiraCode-VariableFont_wght.ttf");
   }
 
+  @font-face {
+    font-family: 'open-sans';
+    src: url("/fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf");
+  }
+
+  @font-face {
+    font-family: 'open-sans';
+    font-style: italic;
+    src: url("/fonts/Open_Sans/OpenSans-Italic-VariableFont_wdth,wght.ttf");
+  }
+
   /* Japanese font */
   @font-face {
     font-weight: 100;
@@ -60,13 +71,12 @@
 @layer components {
   .container {
     margin: 0 auto;
-    
-    
+    padding: 1rem;
   }
 }
 
 /* cambiar los colores */
 body {
-  color: white;
-  background-color: black;
+  color: theme('colors.white');
+  background-color: theme('colors.black');
 }
