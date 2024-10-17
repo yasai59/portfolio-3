@@ -16,7 +16,7 @@ export const StudiesSection = () => {
   }
 
   return (
-    <div className='container'>
+    <section className='container'>
       <div className="flex items-center justify-between">
         <Subtitle>{t("Studies")}</Subtitle>
         <div className='flex items-center'>
@@ -29,6 +29,6 @@ export const StudiesSection = () => {
         <TableItem handleHover={handleHover} comentary={t('')} centre='Jaume Viladoms' course={t('Web App Development')} duration={"2 " + t('years')} period='2022-2024'/>
         <TableItem handleHover={handleHover} comentary={t('') }centre='Jaume Viladoms' course={t('Microcomputer systems and networks')} duration={"2 " + t('years')} period='2020-2022'/>
       </Table>
-    </div>
+    </section>
   )
 }

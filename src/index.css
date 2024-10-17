@@ -75,6 +75,16 @@
   }
 }
 
+@layer utilities {
+  .clip {
+    clip-path: polygon(0 0, 100% 0, 100% 68%, 61% 68%, 61% 100%, 0 100%);
+  }
+
+  .clip-parent {
+    filter: url(#round);
+  }
+}
+
 /* cambiar los colores */
 body {
   color: theme('colors.white');

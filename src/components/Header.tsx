@@ -1,7 +1,7 @@
 import { LanguageSelector } from "./LanguageSelector";
 
 export const Header = () => {
-  return <div className="h-28 flex items-center w-full self-center">
+  return <header className="h-28 flex items-center w-full self-center">
     <div className="container text-sm lg:text-xl flex justify-between">
       <h2>Alejandro <br /> Vidal Casado</h2>
       <ul className="gap-10 items-center hidden md:flex">
@@ -12,5 +12,5 @@ export const Header = () => {
       </ul>
       <LanguageSelector/>
     </div>
-  </div>;
+  </header>;
 };

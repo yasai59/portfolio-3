@@ -30,8 +30,10 @@ export const MiniBob = () => {
       };
 
       // limit the movement of the eyes
-      if (move.x < -80) move.x = -80;
-      if (move.x > 80) move.x = 80;
+      if (move.x < -100) move.x = -100;
+      if (move.x > 10) move.x = 10;
+      if (move.y < -100) move.y = -100;
+      if (move.y > 20) move.y = 20;
 
       pupil.style.transform = `translate(${move.x}%, ${move.y}%)`;
     });

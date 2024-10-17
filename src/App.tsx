@@ -6,11 +6,13 @@ import { StudiesSection } from "./sections/StudiesSection"
 
 function App() {
   return (
-    <div className="overflow-x-hidden">
+    <div className="flex flex-col min-h-screen">
       <Header/>
-      <HeroSection/>
-      <AboutMeSection/>
-      <StudiesSection/>
+      <div className="flex-grow">
+        <HeroSection/>
+         <AboutMeSection/>
+        <StudiesSection/>
+      </div>
       <FooterSection/>
     </div>
   )
