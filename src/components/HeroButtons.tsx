@@ -9,7 +9,7 @@ export const HeroButtons = () => {
         {t("See all my projects")}
       </div>
       
-      <a href="/files/CV_AlejandroVidalCasado.pdf" download="file" target="_blank">
+      <a href="/files/CV_AlejandroVidalCasado.pdf" target="_blank">
         <div className="cursor-pointer bg-white text-black rounded-xl h-[4.5rem] flex items-center select-none font-semibold text-2xl px-5 font-opensans ml-5">
           {t("CV")}<span className="icon-[material-symbols--download] ml-2 text-3xl" />
         </div>
