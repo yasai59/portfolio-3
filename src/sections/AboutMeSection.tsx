@@ -21,9 +21,8 @@ export const AboutMeSection = () => {
               </div>
               <IconButton icon={<span className="icon-[mdi--github]" />} onClick={() => {}}/>
             </div>
-
             <h3 className='text-2xl mb-5 mt-10'>./Back-end</h3>
-            <TechLoader techs={['Node.js', 'Express', 'MongoDB', 'PostgreSQL', 'GraphQL']} />
+            <TechLoader techs={["NodeJS", "Express", "Nest", "PHP", "Laravel", "MariaDB", "PostgreSQL", "MongoDB"]} />
             </div>
             <div className='w-[23rem] overflow-hidden pt-10'>
               <h3 className='text-2xl mb-5'>./Devops</h3>
